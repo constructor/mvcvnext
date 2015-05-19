@@ -8,11 +8,11 @@ COPY . /app
 WORKDIR /app
 
 # Restore packages with kpm
-RUN ["kpm", "restore"]
+RUN ["dnu", "restore"]
 
 # Exposes port 5004 to the world
 EXPOSE 5004
 
 # Configure the command to start the container
 # In this instance we’re starting the Kestrel web server
-ENTRYPOINT ["k", "kestrel"]
+ENTRYPOINT ["dnx", "project.json", "kestrel"]
