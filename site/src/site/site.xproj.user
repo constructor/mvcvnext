@@ -3,6 +3,7 @@
   <PropertyGroup>
     <ActiveDebugProfile>web</ActiveDebugProfile>
     <DebugCLRTypeOverride>NETCore</DebugCLRTypeOverride>
+    <TargetDNXVersion>dnx-coreclr-win-x86.1.0.0-beta4</TargetDNXVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>

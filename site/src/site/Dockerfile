@@ -1,10 +1,10 @@
 # Use Microsoft aspnet image as our base
 FROM microsoft/aspnet
 
-# Copy the contents of /app/wwwroot to the /app directory of the container
+# The COPY line tells Docker that we will copy contents of this folder (.) to # the /app directory of the container...
 COPY . /app
 
-# Move to the /app directory of the container
+# and the WORKDIR instruction will move us to the /app directory.
 WORKDIR /app
 
 # Restore packages with kpm
