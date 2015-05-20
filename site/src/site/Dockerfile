@@ -1,5 +1,7 @@
 # Use Microsoft aspnet image as our base
-FROM microsoft/aspnet
+FROM microsoft/aspnet:1.0.0-beta4
+
+ADD . /app
 
 # The COPY line tells Docker that we will copy contents of this folder (.) to # the /app directory of the container...
 COPY . /app
