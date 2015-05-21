@@ -9,9 +9,6 @@ COPY . /app
 # and the WORKDIR instruction will move us to the /app directory.
 WORKDIR /app
 
-# Restore packages with kpm
-#RUN ["dnu", "restore"]
-
 # Exposes port 5004 to the world
 EXPOSE 5004
 
