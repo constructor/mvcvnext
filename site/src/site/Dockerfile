@@ -9,8 +9,8 @@ COPY . /app
 # and the WORKDIR instruction will move us to the /app directory.
 WORKDIR /app
 
-# Exposes port 5004 to the world
-EXPOSE 5004
+# Exposes port 5000 to the world
+EXPOSE 5000
 
 # Configure the command to start the container
 ENTRYPOINT ["dnx", ".", "kestrel"]
