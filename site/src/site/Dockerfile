@@ -13,4 +13,4 @@ WORKDIR /app
 EXPOSE 5000
 
 # Configure the command to start the container
-ENTRYPOINT ["dnx", ".", "kestrel"]
+ENTRYPOINT ["dnx", ".", "kestrel", "--server.urls", "http://localhost:80"]
