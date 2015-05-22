@@ -3,7 +3,8 @@
   <PropertyGroup>
     <ActiveDebugProfile>web</ActiveDebugProfile>
     <DebugCLRTypeOverride>NETCore</DebugCLRTypeOverride>
-    <TargetDNXVersion>dnx-coreclr-win-x86.1.0.0-beta4</TargetDNXVersion>
+    <TargetDNXVersion>dnx-coreclr-win-x64.1.0.0-beta4</TargetDNXVersion>
+    <NameOfLastUsedPublishProfile>CustomDockerHost</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
