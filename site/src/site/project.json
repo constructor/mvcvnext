@@ -16,9 +16,7 @@
     "Microsoft.AspNet.Diagnostics": "1.0.0-beta4",
     "Microsoft.AspNet.Diagnostics.Entity": "7.0.0-beta4",
     "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-beta4",
-    "Microsoft.AspNet.Server.IIS": "1.0.0-beta4",
-    "Microsoft.AspNet.Server.WebListener": "1.0.0-beta4",
-    "Microsoft.AspNet.StaticFiles": "1.0.0-beta4",
+
     "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta4",
     "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta4",
     "Microsoft.Framework.ConfigurationModel.UserSecrets": "1.0.0-beta4",
@@ -26,11 +24,21 @@
     "Microsoft.Framework.Logging": "1.0.0-beta4",
     "Microsoft.Framework.Logging.Console": "1.0.0-beta4",
     "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-beta4",
+
+    /* http://blog.tomasjansson.com/asp-net-5-hosting-your-application-in-docker/ */
+    "Microsoft.AspNet.Server.IIS": "1.0.0-beta4",
+    "Microsoft.AspNet.Server.WebListener": "1.0.0-beta4",
+    "Microsoft.AspNet.StaticFiles": "1.0.0-beta4",
+    "Microsoft.AspNet.Hosting": "1.0.0-beta4",
     "Kestrel": "1.0.0-beta4"
   },
 
   "commands": {
     "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5000",
+
+    /* http://blog.tomasjansson.com/asp-net-5-hosting-your-application-in-docker/ */
+    "kestrel": "Microsoft.AspNet.Hosting --server Kestrel --server.urls http://localhost:5001",
+
     "gen": "Microsoft.Framework.CodeGeneration",
     "ef":  "EntityFramework.Commands"
   },

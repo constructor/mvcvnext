@@ -1,7 +1,11 @@
 FROM microsoft/aspnet:vs-1.0.0-beta4
 
+RUN ["kpm", "restore"]
+
 ADD . /app
 
-WORKDIR /app/approot/src/site
+WORKDIR /app
 
-ENTRYPOINT ["dnx", ".", "Kestrel", "--server.urls", "http://localhost:80"]
+EXPOSE 5001
+
+ENTRYPOINT ["dnx", ".", "Kestrel"]
