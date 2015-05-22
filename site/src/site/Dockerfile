@@ -1,7 +1,5 @@
 FROM microsoft/aspnet:vs-1.0.0-beta4
 
-RUN ["kpm", "restore"]
-
 ADD . /app
 
 WORKDIR /app
