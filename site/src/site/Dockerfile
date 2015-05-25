@@ -6,4 +6,4 @@ WORKDIR /app
 
 EXPOSE 5001
 
-ENTRYPOINT ["dnx", ".", "Kestrel"]
+ENTRYPOINT ["dnx", ".", "Web"]
